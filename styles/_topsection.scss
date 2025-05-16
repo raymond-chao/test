@@ -1,0 +1,127 @@
+.header-main {
+    display: flex;
+    flex-direction: column;
+
+    &-background {
+    min-height: 820px;
+    max-width: 1770px;
+    width: 100%;
+    background-image: url(../img/main-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: scroll;
+    }
+    
+    &-hero-section {
+
+        &-text {
+            margin-top: 16em;
+            margin-bottom: 5em;
+            font-family: fonts.$main-font;
+            justify-items: center;
+
+            &-name {
+                color: #ffffff;
+                font-style: bold;
+                font-size: 48px;
+                line-height: 26px;
+                letter-spacing: 4.8px;
+                margin-bottom: 0.3em;
+            }
+
+            &-slogan {
+                color: #ffffff;
+                font-style: normal;
+                font-size: 22px;
+                line-height: 26px;
+                letter-spacing: 6.82px;
+                font-weight: 350;
+            }
+        }
+
+        &-search {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 7em;
+
+            &-form {
+                max-width: 653px;
+                width: 100%;
+                background-color: #ffffff;
+                padding: 0.2em;
+
+                &-container {
+                    display: flex;
+                }
+
+                &_-button {
+                    display: flex;
+
+                    &-icon {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        &-scroll {
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2em;
+            margin-bottom: 6.8em;
+
+            &-text {
+                font-family: fonts.$main-font;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 2.8px;
+            }
+        }
+    }
+
+    #search {
+        max-width: 653px;
+        width: 100%;
+        border: none;
+    }
+
+    .btn-form {
+        background-color: #5474FD;
+        color: #ffffff;
+        font-family: fonts.$secondary-font;
+        font-style: normal;
+        font-size: 100;
+        letter-spacing: 1.4px;
+        line-height: 26px;
+        font-size: 14px;
+        padding: 1em;
+        position: relative;
+        border: none;
+        width: 153px;
+        height: 63px;
+
+        &:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+    }
+}
+
+label[for="search"] {
+    display: none;
+}
+
+.input-field {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 6px;
+}
+
+.input-field:focus {
+    box-shadow: 0px 2px 0px orange
+}

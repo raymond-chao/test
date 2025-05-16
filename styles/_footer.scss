@@ -1,0 +1,54 @@
+.footer-main {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-family: fonts.$main-font;
+    line-height: 26px;
+    min-height: 271px;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & a {
+            text-decoration: none;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &-logo {
+        font-size: 24px;
+        font-style: bold;
+        letter-spacing: 3.36px;
+        margin-bottom: 0.3em;
+        color: #ffffff; 
+    }
+
+    &-slogan {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        margin-bottom: 1em;
+    }
+
+    &-socials {
+        display: flex;
+        gap: 1.5em;
+
+        & a {
+            color: #ffffff;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+.fa-linkedin-in {
+    color: #5474FD;
+}

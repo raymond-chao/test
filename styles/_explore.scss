@@ -1,0 +1,129 @@
+@media screen and (max-width: 6000px) {
+.explore-section {
+    
+    &-background {
+        min-height: 685px;
+        max-width: 1770px;
+        width: 100%;
+        background-image: url(../images/whychooseus-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-attachment: scroll;
+        display: flex;
+        gap: 4em;
+    }
+
+    &-left {
+        margin-top: 15em;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 10em;
+
+        &-title {
+            color: #ffffff;
+            font-family: fonts.$secondary-font;
+            font-style: normal;
+            font-size: 36px;
+            line-height: 26px;
+            margin-bottom: 2em;
+            font-weight: 400;
+        }
+
+        &-text {
+            color: #ffffff;
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 1.6px;
+            font-weight: 300;
+        }
+
+        &-button {
+            margin-top: 2em; 
+            align-content: center;
+            text-align: center;
+        }
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8em;
+        width: 50%;
+        margin-right: 10%;
+        gap: 1em;
+        
+        &-firstimg {
+            margin-left: 2em;
+        }
+
+        &-secondimg {
+            margin-left: 6em;
+        }
+    }
+}
+
+.button-explore {
+    background-color: #5474FD;
+    color: #ffffff;
+    font-family: fonts.$secondary-font;
+    font-style: normal;
+    font-size: 100;
+    letter-spacing: 1.4px;
+    line-height: 26px;
+    font-size: 14px;
+    padding: 1em;
+    position: relative;
+    border: none;
+    height: 63px;
+    width: 228px;
+
+    &:hover {
+            color:white;
+            background-color: orange;
+            cursor: pointer;
+        }
+}
+}
+
+@media screen and (max-width: 900px) {
+    .explore-section {
+    
+        &-background {
+            flex-direction: column;
+        }
+
+        &-left {
+            width: 100%;
+            align-items: center;
+            margin-left: 0px;
+            margin-bottom: 0px;
+
+            &-text {
+                margin-right: 5em;
+                margin-left: 5em;
+            }
+        }
+
+        &-right {
+            width: 100%;
+            margin-top: 2em;
+            margin-right: 0px;
+            gap: 2em;
+            margin-bottom: 2em;
+            align-items: center;
+
+            &-firstimg {
+                margin-left: 0em;
+            }
+    
+            &-secondimg {
+                margin-left: 0em;
+            }
+        }
+    }
+}
